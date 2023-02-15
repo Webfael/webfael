@@ -40,6 +40,36 @@ body {
 
 .hero {
     grid-area: hero;
+    height: 89vh;
+    background: url('../img/background.jpg') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero h2 {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: #e1b92f;
+}
+
+h2 {color: white; text-shadow: black 0.1em 0.1em 0.2em}
+
+.hero::after {
+    content: url('../img/seta_preta.png');
+    height: 35px;
+    bottom: 40px;
+    position: absolute;
+    animation: downArrow 0.6s infinite alternate ease-in-out;
+}
+
+@-webkit-keyframes downArrow {
+    0% { -webkit-transform: translateY(0); opacity: 0.4; }
+    100% { -webkit-transform: translateY(0.5em); opacity: 0.9; }
 }
 
 .about {

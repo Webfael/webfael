@@ -104,6 +104,7 @@
         background-color: darkslateblue;
         padding: 20px;
         border-radius: 20px;
+        transition: 1s ease-in-out;
     }
 
     .header nav a {
